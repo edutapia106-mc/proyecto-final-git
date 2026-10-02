@@ -5,96 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Colaborativo - Usuarios de Netflix</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Fuentes e Iconos de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Encabezado fijo superior -->
   <header>
-    <h1>Usuarios De Netflix</h1>
+    <div class="logo-container">
+      <h1>NETFLIX <span>STUDENTS</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#tabla">Listado</a></li>
+        <li><a href="#galeria">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#tabla">Tabla de Datos</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+  <!-- Hero Banner de presentación -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Panel de Gestión & Catálogo 2026</h2>
+      <p>Plataforma colaborativa desarrollada para la gestión de usuarios y contenido exclusivo.</p>
+    </div>
+  </section>
 
   <main>
-    <section id="tabla">
-      <h2>Listado</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Correo Electrónico</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Eduardo</td>
-            <td>Tapia</td>
-            <td>edutapia106@gmail.com</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Carlos</td>
-            <td>Pérez</td>
-            <td>carlos.perez@example.com</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Ana</td>
-            <td>Gómez</td>
-            <td>ana.gomez@example.com</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Luis</td>
-            <td>Martínez</td>
-            <td>luis.mtz@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Tarea Estudiante A: Sección Galería / Grid -->
-    <section id="galeria">
-      <h2>Galería / Catálogo</h2>
-      <div class="grid-galeria">
-        <div class="card-item">Películas Populares</div>
-        <div class="card-item">Series Tendencia</div>
-        <div class="card-item">Documentales</div>
-        <div class="card-item">Nuevos Estrenos</div>
+    <!-- Sección Tabla de Usuarios -->
+    <section id="tabla" class="card-container">
+      <h2>👥 Usuarios Registrados</h2>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Correo Electrónico</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td><span class="badge active">Activo</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Eduardo</td>
+              <td>Tapia</td>
+              <td>edutapia106@gmail.com</td>
+              <td><span class="badge active">Admin</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Carlos</td>
+              <td>Pérez</td>
+              <td>carlos.perez@example.com</td>
+              <td><span class="badge active">Activo</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Ana</td>
+              <td>Gómez</td>
+              <td>ana.gomez@example.com</td>
+              <td><span class="badge pending">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Luis</td>
+              <td>Martínez</td>
+              <td>luis.mtz@example.com</td>
+              <td><span class="badge active">Activo</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <!-- Tarea Estudiante B: Sección Acerca de y Formulario -->
-    <section id="contacto">
-      <h2>Formulario de Contacto</h2>
+    <!-- Sección Galería de Catálogo -->
+    <section id="galeria" class="card-container">
+      <h2>🎬 Catálogo Destacado</h2>
+      <div class="grid-galeria">
+        <div class="card-item">
+          <div class="card-tag">Top 1</div>
+          <h3>Películas Populares</h3>
+          <p>Los estrenos más vistos de la semana en HD.</p>
+        </div>
+        <div class="card-item">
+          <div class="card-tag">Tendencia</div>
+          <h3>Series Maratónicas</h3>
+          <p>Temporadas completas disponibles ahora.</p>
+        </div>
+        <div class="card-item">
+          <div class="card-tag">Exclusivo</div>
+          <h3>Documentales</h3>
+          <p>Historias reales e investigaciones fascinantes.</p>
+        </div>
+        <div class="card-item">
+          <div class="card-tag">Nuevo</div>
+          <h3>Nuevos Estrenos</h3>
+          <p>Añadidos recientemente a la biblioteca.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Formulario de Contacto -->
+    <section id="contacto" class="card-container">
+      <h2>📬 Centro de Mensajes</h2>
       <form action="#" method="post">
-        <label for="nombre">Nombre Completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+        <div class="form-group">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Eduardo Tapia" required>
+        </div>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+        </div>
 
-        <button type="submit">Enviar Información</button>
+        <div class="form-group">
+          <label for="mensaje">Mensaje o Consulta:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Enviar Mensaje</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Proyecto Colaborativo - Todos los derechos reservados.</p>
+    <p>&copy; 2026 Proyecto Colaborativo Git & GitHub | Todos los derechos reservados.</p>
   </footer>
 
 </body>
