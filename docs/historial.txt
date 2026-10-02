@@ -1,0 +1,12 @@
+*   ab11d35 Merge remote-tracking branch 'origin/Alejandro'
+|\  
+| * 14aa42a Se añaden estilos
+* |   3fbea9e Merge branch 'Eduardo'
+|\ \  
+| * | f4c17d1 fix: resolver conflicto en estilos de tabla
+| |/  
+* | e1840df Merge pull request #1 from edutapia106-mc/Eduardo
+|\| 
+| * 3118bf4 estilos
+|/  
+* 5246324 primmer commit
